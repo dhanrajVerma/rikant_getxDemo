@@ -82,9 +82,6 @@ HomeController controller=Get.put(HomeController());
                       // controller.checkLogin();
                     },
                   ),
-                  const SizedBox(
-                    height: 16,
-                  ),
                 ],
               ),
             ),
