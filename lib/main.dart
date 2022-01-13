@@ -13,9 +13,7 @@ class MyApp extends StatelessWidget {
   MyController controller = Get.put(MyController());
   @override
   Widget build(BuildContext context) {
-    return  GetMaterialApp(
-
-        debugShowCheckedModeBanner: false,
-        home: HomeScreen());
+    return GetMaterialApp(
+        debugShowCheckedModeBanner: false, home: HomeScreen());
   }
 }

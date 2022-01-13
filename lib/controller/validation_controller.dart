@@ -14,7 +14,6 @@ class HomeController extends GetxController {
     passwordController = TextEditingController();
   }
 
-
   @override
   void onClose() {
     emailController.dispose();
