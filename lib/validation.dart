@@ -78,6 +78,9 @@ HomeController controller=Get.put(HomeController());
                       if (controller.loginFormKey.currentState!.validate()) {
 
                         Get.to(const Screen2());
+
+
+
                       }
                       // controller.checkLogin();
                     },
