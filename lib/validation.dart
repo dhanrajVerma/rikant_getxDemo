@@ -3,10 +3,7 @@ import 'package:get/get.dart';
 import 'package:getbuilder/screen2.dart';
 import 'controller/validation_controller.dart';
 
-class HomeScreen extends StatelessWidget {
-  HomeScreen({Key? key}) : super(key: key);
-
-  HomeController controller = Get.put(HomeController());
+class HomeScreen extends GetView<HomeController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

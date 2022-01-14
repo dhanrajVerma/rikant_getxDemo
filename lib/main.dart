@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:getbuilder/controller/my_controller.dart';
+import 'package:getbuilder/routes/app_pages.dart';
 
 import 'package:getbuilder/validation.dart';
 
@@ -14,6 +15,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-        debugShowCheckedModeBanner: false, home: HomeScreen());
+      title: "Applicatiom",
+      initialRoute: AppPages.initial,
+      getPages: AppPages.routes,
+      debugShowCheckedModeBanner: false,
+      // home: HomeScreen()
+    );
   }
 }
