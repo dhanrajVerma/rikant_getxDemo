@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:getbuilder/screen2.dart';
+import 'bottom_navigation.dart';
 import 'controller/validation_controller.dart';
 
 class HomeScreen extends GetView<HomeController> {
@@ -68,7 +69,7 @@ class HomeScreen extends GetView<HomeController> {
                     ),
                     onPressed: () {
                       if (controller.loginFormKey.currentState!.validate()) {
-                        Get.to(const Screen2());
+                        Get.to( LandingPage());
                       }
                       // controller.checkLogin();
                     },
