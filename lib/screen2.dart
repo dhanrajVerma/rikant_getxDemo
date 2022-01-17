@@ -12,7 +12,6 @@ class Screen2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -20,7 +19,7 @@ class Screen2 extends StatelessWidget {
           children: <Widget>[
             GetBuilder<MyController>(
                 init: MyController(),
-                initState: (_){
+                initState: (_) {
                   print('Getbuilder state initializing');
                 },
                 builder: (controller) {
@@ -42,7 +41,6 @@ class Screen2 extends StatelessWidget {
               onPressed: Get.find<MyController>().reset,
               child: Text("Reset"),
             ),
-
 
 //               Text("Count value"),
 // FlatButton(color:Colors.black,onPressed:(){}, child: Text("Increment the value",style: TextStyle(color: Colors.),)

@@ -1,16 +1,12 @@
-
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:getbuilder/screen2.dart';
+import 'bottom_navigation.dart';
 import 'controller/validation_controller.dart';
 
-class HomeScreen extends StatelessWidget {
-   HomeScreen({Key? key}) : super(key: key);
-
-HomeController controller=Get.put(HomeController());
+class HomeScreen extends GetView<HomeController> {
   @override
   Widget build(BuildContext context) {
-
     return Scaffold(
       body: SafeArea(
         child: Container(
@@ -25,9 +21,7 @@ HomeController controller=Get.put(HomeController());
                 children: [
                   TextFormField(
                     decoration: const InputDecoration(
-
                       labelText: "Email",
-
                     ),
                     keyboardType: TextInputType.emailAddress,
                     controller: controller.emailController,
@@ -44,7 +38,6 @@ HomeController controller=Get.put(HomeController());
                   TextFormField(
                     decoration: const InputDecoration(
                       labelText: "Password",
-
                     ),
                     keyboardType: TextInputType.visiblePassword,
                     obscureText: true,
@@ -66,9 +59,9 @@ HomeController controller=Get.put(HomeController());
                           borderRadius: BorderRadius.circular(0),
                         ),
                       ),
-                      backgroundColor:
-                      MaterialStateProperty.all(Colors.black),
-                      padding: MaterialStateProperty.all(const EdgeInsets.all(14)),
+                      backgroundColor: MaterialStateProperty.all(Colors.black),
+                      padding:
+                          MaterialStateProperty.all(const EdgeInsets.all(14)),
                     ),
                     child: const Text(
                       "Login",
@@ -76,8 +69,7 @@ HomeController controller=Get.put(HomeController());
                     ),
                     onPressed: () {
                       if (controller.loginFormKey.currentState!.validate()) {
-
-                        Get.to(const Screen2());
+                        Get.to( LandingPage());
                       }
                       // controller.checkLogin();
                     },
